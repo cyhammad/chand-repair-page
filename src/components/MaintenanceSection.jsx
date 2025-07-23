@@ -74,7 +74,7 @@ export default function MaintenanceSection() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Proper maintenance extends appliance life and prevents costly repairs. 
-            Follow these expert tips from Bosch Repair Center Abu Dhabi.
+            Follow these expert tips from Bosch Repair Center UAE.
           </p>
         </div>
 
@@ -118,7 +118,7 @@ export default function MaintenanceSection() {
               Benefits of Preventive Maintenance
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Regular maintenance by Bosch Repair Center Abu Dhabi helps prevent breakdowns 
+              Regular maintenance by Bosch Repair Center UAE helps prevent breakdowns 
               and ensures your appliances operate at peak efficiency.
             </p>
           </div>
@@ -197,7 +197,7 @@ export default function MaintenanceSection() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-gray-700">Same-day service in Abu Dhabi</span>
+                  <span className="text-gray-700">Same-day service in UAE</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />

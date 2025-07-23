@@ -48,7 +48,7 @@ export default function WarrantySection() {
             Comprehensive Warranty Coverage
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Bosch Repair Center Abu Dhabi offers industry-leading warranty coverage on all repairs. 
+            Bosch Repair Center UAE offers industry-leading warranty coverage on all repairs. 
             Your satisfaction and peace of mind are our top priorities.
           </p>
         </div>

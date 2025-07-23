@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import MaintenanceSection from "@/components/MaintenanceSection";
+import ServiceDetails from "@/components/ServiceDetails";
 import ServicesSection from "@/components/ServicesSection";
 import WarrantySection from "@/components/WarrantySection";
 
@@ -14,11 +15,12 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <ServiceDetails />
         <ServicesSection />
         <AboutSection />
-        <WarrantySection />
-        <MaintenanceSection />
-        <ContactSection />
+        {/* <WarrantySection /> */}
+        {/* <MaintenanceSection /> */}
+        {/* <ContactSection /> */}
       </main>
       <Footer />
       <FloatingActionButtons />

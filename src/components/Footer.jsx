@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="text-gray-300 text-sm">Repair Center</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Leading Bosch appliance repair service in Abu Dhabi. Certified technicians, 
+              Leading Bosch appliance repair service in UAE. Certified technicians, 
               genuine parts, and comprehensive warranty coverage for all Bosch home appliances.
             </p>
             <div className="flex space-x-4">
@@ -79,7 +79,7 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <div className="font-semibold">Abu Dhabi, UAE</div>
+                  <div className="font-semibold">UAE, UAE</div>
                   <div className="text-gray-300 text-sm">Serving all areas</div>
                 </div>
               </div>
@@ -103,13 +103,13 @@ export default function Footer() {
       {/* Service Areas */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-8">
-          <h4 className="text-lg font-semibold mb-4">Service Areas in Abu Dhabi</h4>
+          <h4 className="text-lg font-semibold mb-4">Service Areas in UAE</h4>
           <div className="grid md:grid-cols-3 gap-4 text-gray-300 text-sm">
             <div>
               <ul className="space-y-1">
                 <li>Marina Mall Area</li>
                 <li>Corniche Road</li>
-                <li>Downtown Abu Dhabi</li>
+                <li>Downtown UAE</li>
                 <li>Al Maryah Island</li>
               </ul>
             </div>
@@ -138,7 +138,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Bosch Repair Center Abu Dhabi. All rights reserved.
+              © 2025 Bosch Repair Center UAE. All rights reserved.
             </div>
             <div className="flex space-x-6 text-gray-400 text-sm">
               <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>

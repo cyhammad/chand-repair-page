@@ -1,44 +1,60 @@
 "use client";
 
-import { Phone, MessageCircle } from "lucide-react";
+import { companyName, phoneNumber } from "@/lib/company";
+import Image from "next/image";
+import { useParams } from "next/navigation";
 
 export default function FloatingActionButtons() {
-  const handleCall = () => {
-    window.location.href = "tel:+97121234567";
+  const params = useParams();
+  const company =
+    typeof params.company === "string"
+      ? params.company.toLowerCase()
+      : companyName;
+  const companyTitle = company
+    ? `${company.charAt(0).toUpperCase()}${company.slice(1)}`
+    : "Our";
+
+  const sendMessage = () => {
+    const message = `Hello, I’m interested in getting my home appliance repaired by ${companyTitle} Repair Center.`;
+    const url = `https://wa.me/${phoneNumber.replace(
+      /\D/g,
+      ""
+    )}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
   };
 
-  const handleWhatsApp = () => {
-    window.open(
-      "https://wa.me/97121234567?text=Hello! I need help with my Bosch appliance repair in Abu Dhabi.",
-      "_blank"
-    );
+  const dialPhone = () => {
+    window.location.href = `tel:${phoneNumber.replace(/\s/g, "")}`;
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
-      {/* WhatsApp Button */}
-      <button
-        onClick={handleWhatsApp}
-        className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 group"
-        aria-label="Contact us on WhatsApp"
-      >
-        <MessageCircle className="h-6 w-6" />
-        <div className="absolute right-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-          WhatsApp Chat
-        </div>
-      </button>
-
-      {/* Call Button */}
-      <button
-        onClick={handleCall}
-        className="bg-primary hover:bg-primary/90 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 group"
-        aria-label="Call us now"
-      >
-        <Phone className="h-6 w-6" />
-        <div className="absolute right-16 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-          Call Now
-        </div>
-      </button>
+    <div className="fixed bottom-0 flex justify-end w-screen z-[101] px-3 py-2 pointer-events-none">
+      <div className="flex justify-end gap-2 flex-col max-w-7xl items-end">
+        <button
+          onClick={sendMessage}
+          className="rounded-md flex items-center justify-center h-14 w-14 bg-transparent pointer-events-auto"
+        >
+          <Image
+            quality={100}
+            src="/static/whatsapp-2.svg"
+            alt="Whatsapp"
+            width={40}
+            height={40}
+          />
+        </button>
+        <button
+          onClick={dialPhone}
+          className="flex items-center justify-center size-12 mr-1 bg-gray-500 rounded-full pointer-events-auto"
+        >
+          <Image
+            quality={100}
+            src="/static/call.svg"
+            alt="Call us"
+            width={22}
+            height={22}
+          />
+        </button>
+      </div>
     </div>
   );
 }

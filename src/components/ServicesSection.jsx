@@ -9,7 +9,7 @@ const services = [
     description:
       "Expert repair for Bosch refrigerators including cooling issues, ice maker problems, and temperature control malfunctions.",
     image:
-      "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=400&h=300&fit=crop&crop=center",
+      "/fridge.jpg",
     features: [
       "Temperature Issues",
       "Ice Maker Repair",
@@ -22,7 +22,7 @@ const services = [
     description:
       "Professional Bosch dishwasher repair services for cleaning problems, drainage issues, and control panel malfunctions.",
     image:
-      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&crop=center",
+      "/dishwasher.jpg",
     features: [
       "Poor Cleaning",
       "Water Drainage",
@@ -35,7 +35,7 @@ const services = [
     description:
       "Comprehensive Bosch oven repair including heating elements, temperature sensors, and door mechanism repairs.",
     image:
-      "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=400&h=300&fit=crop&crop=center",
+      "/oven.jpg",
     features: [
       "Heating Elements",
       "Temperature Control",
@@ -48,7 +48,7 @@ const services = [
     description:
       "Expert repair services for Bosch stoves and cooktops including burner issues, ignition problems, and control repairs.",
     image:
-      "https://images.unsplash.com/photo-1556909114-4f6e8cbbf24c?w=400&h=300&fit=crop&crop=center",
+      "/cooktop.jpg",
     features: [
       "Burner Problems",
       "Ignition Issues",
@@ -61,7 +61,7 @@ const services = [
     description:
       "Professional Bosch washing machine repair for spinning issues, water problems, and control system malfunctions.",
     image:
-      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=300&fit=crop&crop=center",
+      "/washing.jpg",
     features: [
       "Spin Cycle Issues",
       "Water Problems",
@@ -74,7 +74,7 @@ const services = [
     description:
       "Expert Bosch dryer repair services including heating problems, drum issues, and ventilation system repairs.",
     image:
-      "https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=400&h=300&fit=crop&crop=center",
+      "/dryer.jpg",
     features: [
       "Heating Problems",
       "Drum Issues",
@@ -95,12 +95,12 @@ export default function ServicesSection() {
             Our Services
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Bosch Repair Center Abu Dhabi Services
+            Bosch Repair Center UAE Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Professional repair services for all Bosch home appliances with
             certified technicians, genuine parts, and comprehensive warranty
-            coverage in Abu Dhabi.
+            coverage in UAE.
           </p>
         </div>
 
@@ -170,7 +170,7 @@ export default function ServicesSection() {
                 Authorized Service
               </h4>
               <p className="text-gray-600 text-sm">
-                Official Bosch authorized repair center in Abu Dhabi
+                Official Bosch authorized repair center in UAE
               </p>
             </div>
             <div className="text-center">
@@ -181,7 +181,7 @@ export default function ServicesSection() {
                 Same Day Service
               </h4>
               <p className="text-gray-600 text-sm">
-                Emergency repairs available 24/7 across Abu Dhabi
+                Emergency repairs available 24/7 across UAE
               </p>
             </div>
             <div className="text-center">

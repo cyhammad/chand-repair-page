@@ -1,5 +1,9 @@
+"use client";
+
+import Image from "next/image";
 import { Button } from "./ui/button";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { phoneNumber } from "@/lib/company";
 
 export default function Header() {
   return (
@@ -14,37 +18,75 @@ export default function Header() {
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="h-4 w-4 text-primary" />
-              <span>Abu Dhabi, UAE</span>
+              <span>Repair Center, UAE</span>
             </div>
           </div>
           <div className="hidden md:block">
-            <span className="text-muted-foreground">Available 24/7 for Emergency Repairs</span>
+            <span className="text-muted-foreground">
+              Available 24/7 for Emergency Repairs
+            </span>
           </div>
         </div>
       </div>
 
       {/* Main header */}
-      <header className="sticky top-0 z-50 bg-white shadow-sm border-b">
+      <header className="sticky top-0 z-50 bg-white border-b">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <div className="bg-primary text-white px-3 py-1 text-xl font-bold">BOSCH</div>
-              <span className="text-gray-600 text-sm">Repair Center</span>
-            </div>
+            <Image
+              className="w-32"
+              src="/bosch.svg"
+              width={200}
+              height={100}
+              alt="Logo"
+            />
 
             {/* Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="#home" className="text-gray-700 hover:text-primary transition-colors">Home</a>
-              <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Services</a>
-              <a href="#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
-              <a href="#warranty" className="text-gray-700 hover:text-primary transition-colors">Warranty</a>
-              <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
+              <a
+                href="#home"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                Home
+              </a>
+              <a
+                href="#services"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                Services
+              </a>
+              <a
+                href="#about"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                About
+              </a>
+              <a
+                href="#warranty"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                Warranty
+              </a>
+              <a
+                href="#contact"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                Contact
+              </a>
             </nav>
 
             {/* CTA Button */}
             <div className="flex items-center space-x-4">
-              <Button className="bg-primary hover:bg-primary/90 text-white">
+              <Button
+                onClick={() => {
+                  window.location.href = `tel:${phoneNumber.replace(
+                    /\s/g,
+                    ""
+                  )}`;
+                }}
+                className="bg-primary hover:bg-primary/90 text-white"
+              >
                 Book Repair
               </Button>
             </div>

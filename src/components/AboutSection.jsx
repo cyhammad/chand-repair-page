@@ -17,7 +17,7 @@ const achievements = [
   {
     icon: Clock,
     title: "Quick Response",
-    description: "Same-day service across Abu Dhabi",
+    description: "Same-day service across UAE",
   },
   {
     icon: Shield,
@@ -45,16 +45,16 @@ export default function AboutSection() {
               About Us
             </div>
             <h2 className="text-4xl font-bold text-gray-900">
-              Leading Bosch Repair Center in Abu Dhabi
+              Leading Bosch Repair Center in UAE
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Bosch Repair Center Abu Dhabi has been the trusted choice for
+              Bosch Repair Center UAE has been the trusted choice for
               Bosch appliance repairs since 2008. Our certified technicians
               specialize exclusively in Bosch home appliances, ensuring expert
               service with genuine parts and comprehensive warranty coverage.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              As an authorized Bosch service center in Abu Dhabi, we maintain
+              As an authorized Bosch service center in UAE, we maintain
               the highest standards of quality and customer satisfaction. Our
               team undergoes continuous training to stay updated with the latest
               Bosch technologies and repair techniques.
@@ -63,7 +63,7 @@ export default function AboutSection() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                <span>Authorized Bosch Service Center in Abu Dhabi</span>
+                <span>Authorized Bosch Service Center in UAE</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
@@ -88,7 +88,7 @@ export default function AboutSection() {
           <div className="relative">
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=500&fit=crop&crop=center"
-              alt="Bosch certified technician working on appliance repair in Abu Dhabi"
+              alt="Bosch certified technician working on appliance repair in UAE"
               className="w-full h-auto rounded-lg shadow-lg"
               width={600}
               height={500}
@@ -97,7 +97,7 @@ export default function AboutSection() {
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">15+</div>
                 <div className="text-sm text-gray-600">Years Serving</div>
-                <div className="text-sm text-gray-600">Abu Dhabi</div>
+                <div className="text-sm text-gray-600">UAE</div>
               </div>
             </div>
           </div>

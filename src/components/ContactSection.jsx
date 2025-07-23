@@ -15,11 +15,11 @@ export default function ContactSection() {
             Get In Touch
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Contact Bosch Repair Center Abu Dhabi
+            Contact Bosch Repair Center UAE
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Need Bosch appliance repair in Abu Dhabi? Contact our certified technicians for immediate assistance. 
-            We provide same-day service across all areas of Abu Dhabi.
+            Need Bosch appliance repair in UAE? Contact our certified technicians for immediate assistance. 
+            We provide same-day service across all areas of UAE.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export default function ContactSection() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Abu Dhabi Location</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">UAE Location</label>
                     <Input placeholder="e.g., Marina, Downtown, Khalifa City..." className="w-full" />
                   </div>
 
@@ -127,10 +127,10 @@ export default function ContactSection() {
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Service Areas in Abu Dhabi</h4>
+                      <h4 className="font-semibold text-gray-900 mb-2">Service Areas in UAE</h4>
                       <div className="text-gray-600 text-sm space-y-1">
                         <p>• Marina Mall Area, Corniche</p>
-                        <p>• Downtown Abu Dhabi, Al Maryah Island</p>
+                        <p>• Downtown UAE, Al Maryah Island</p>
                         <p>• Khalifa City, Al Raha</p>
                         <p>• Yas Island, Saadiyat Island</p>
                         <p>• Al Reef, Al Shamkha</p>
@@ -163,7 +163,7 @@ export default function ContactSection() {
             {/* Emergency Banner */}
             <div className="bg-primary text-white rounded-lg p-6 text-center">
               <h4 className="text-xl font-semibold mb-2">Emergency Bosch Repair?</h4>
-              <p className="mb-4">Our certified technicians are available 24/7 for urgent repairs across Abu Dhabi</p>
+              <p className="mb-4">Our certified technicians are available 24/7 for urgent repairs across UAE</p>
               <Button variant="secondary" className="bg-white text-primary hover:bg-gray-100">
                 Call Emergency Line
               </Button>
