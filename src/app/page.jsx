@@ -16,8 +16,8 @@ export default function Home() {
       <main>
         <HeroSection />
         <ServiceDetails />
-        <ServicesSection />
-        <AboutSection />
+        {/* <ServicesSection /> */}
+        {/* <AboutSection /> */}
         {/* <WarrantySection /> */}
         {/* <MaintenanceSection /> */}
         {/* <ContactSection /> */}

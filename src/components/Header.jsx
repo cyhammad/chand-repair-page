@@ -14,7 +14,7 @@ export default function Header() {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="h-4 w-4 text-primary" />
-              <span>+971 2 123 4567</span>
+              <span>{phoneNumber}</span>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="h-4 w-4 text-primary" />

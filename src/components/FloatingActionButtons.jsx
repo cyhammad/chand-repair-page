@@ -28,7 +28,7 @@ export default function FloatingActionButtons() {
   };
 
   return (
-    <div className="fixed bottom-0 flex justify-end w-screen z-[101] px-3 py-2 pointer-events-none">
+    <div className="fixed bottom-10 right-4 flex justify-end w-screen z-[101] py-2 pointer-events-none">
       <div className="flex justify-end gap-2 flex-col max-w-7xl items-end">
         <button
           onClick={sendMessage}
@@ -38,13 +38,13 @@ export default function FloatingActionButtons() {
             quality={100}
             src="/static/whatsapp-2.svg"
             alt="Whatsapp"
-            width={40}
-            height={40}
+            width={56}
+            height={56}
           />
         </button>
         <button
           onClick={dialPhone}
-          className="flex items-center justify-center size-12 mr-1 bg-gray-500 rounded-full pointer-events-auto"
+          className="flex items-center justify-center size-14 bg-gray-500 rounded-full pointer-events-auto"
         >
           <Image
             quality={100}

@@ -9,7 +9,7 @@ const services = [
     description:
       "Expert repair for Bosch refrigerators including cooling issues, ice maker problems, and temperature control malfunctions.",
     image:
-      "/fridge.jpg",
+      "/fridge.webp",
     features: [
       "Temperature Issues",
       "Ice Maker Repair",
@@ -35,7 +35,7 @@ const services = [
     description:
       "Comprehensive Bosch oven repair including heating elements, temperature sensors, and door mechanism repairs.",
     image:
-      "/oven.jpg",
+      "/oven.webp",
     features: [
       "Heating Elements",
       "Temperature Control",
@@ -48,7 +48,7 @@ const services = [
     description:
       "Expert repair services for Bosch stoves and cooktops including burner issues, ignition problems, and control repairs.",
     image:
-      "/cooktop.jpg",
+      "/cooktop.webp",
     features: [
       "Burner Problems",
       "Ignition Issues",
@@ -61,7 +61,7 @@ const services = [
     description:
       "Professional Bosch washing machine repair for spinning issues, water problems, and control system malfunctions.",
     image:
-      "/washing.jpg",
+      "/washing.webp",
     features: [
       "Spin Cycle Issues",
       "Water Problems",
@@ -74,7 +74,7 @@ const services = [
     description:
       "Expert Bosch dryer repair services including heating problems, drum issues, and ventilation system repairs.",
     image:
-      "/dryer.jpg",
+      "/dryer.webp",
     features: [
       "Heating Problems",
       "Drum Issues",
