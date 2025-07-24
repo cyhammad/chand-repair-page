@@ -26,7 +26,7 @@ const CTAButtons = () => {
   const whatsappClass =
     companyColors[company] || "bg-primary hover:bg-yellow-400 text-white";
 
-  const message = `Hello, I’m interested in getting my home appliance repaired by ${companyTitle} Repair Center.`;
+  const message = `Hello, I’m interested in getting my home appliance repaired by Bosch Repair Center.`;
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(
     /\D/g,
     ""

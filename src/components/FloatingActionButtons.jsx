@@ -15,7 +15,7 @@ export default function FloatingActionButtons() {
     : "Our";
 
   const sendMessage = () => {
-    const message = `Hello, I’m interested in getting my home appliance repaired by ${companyTitle} Repair Center.`;
+    const message = `Hello, I’m interested in getting my home appliance repaired by Bosch Repair Center.`;
     const url = `https://wa.me/${phoneNumber.replace(
       /\D/g,
       ""

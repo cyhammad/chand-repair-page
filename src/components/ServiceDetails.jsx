@@ -109,6 +109,35 @@ const ServiceDetails = () => {
             </div>
           </div>
         ))}
+        <div className="flex flex-col items-center w-full gap-7 justify-center">
+          <div className="text-center text-3xl font-bold">Our Features</div>
+          <div className="grid md:grid-cols-3 place-items-center gap-10 self-center w-full">
+            <div className="flex flex-col items-center justify-center gap-4 max-w-[180px] text-center">
+              <Image src="/handshake.svg" width={80} height={80} alt="icon" />
+              <span className="text-2xl font-bold">Affordable Rates</span>
+              <span className="text-center">
+                Quality services does not have be heavy on your pocket. We offer
+                reasonable pricing.
+              </span>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-4 max-w-[180px] text-center">
+              <Image src="/hearthand.svg" width={80} height={80} alt="icon" />
+              <span className="text-2xl font-bold">Customer Satisfaction</span>
+              <span className="text-center">
+                Your satisfaction means everything to us. We ensure you are
+                satisfied by the repairs done by us.
+              </span>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-4 max-w-[180px] text-center">
+              <Image src="/laptop.svg" width={80} height={80} alt="icon" />
+              <span className="text-2xl font-bold">Certified Technicians</span>
+              <span className="text-center">
+                We have a certified team of bosch to handle all the issues in
+                bosch appliances at professional level.
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

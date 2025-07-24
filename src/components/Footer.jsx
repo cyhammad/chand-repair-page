@@ -36,13 +36,13 @@ export default function Footer() {
               for all Bosch home appliances.
             </p>
             <div className="flex space-x-4">
-              <div className="bg-gray-800 p-2 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
+              <div className="p-2 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
                 <Facebook className="h-5 w-5" />
               </div>
-              <div className="bg-gray-800 p-2 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
+              <div className="p-2 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
                 <Instagram className="h-5 w-5" />
               </div>
-              <div className="bg-gray-800 p-2 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
+              <div className="p-2 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
                 <Linkedin className="h-5 w-5" />
               </div>
             </div>
@@ -139,10 +139,6 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-
-            <Button className="mt-6 bg-primary hover:bg-primary/90 text-white w-full">
-              Emergency Repair
-            </Button>
           </div>
         </div>
       </div>
