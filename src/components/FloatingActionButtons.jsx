@@ -15,7 +15,7 @@ export default function FloatingActionButtons() {
     : "Our";
 
   const sendMessage = () => {
-    const message = `Hello, I’m interested in getting my home appliance repaired by Bosch Repair Center.`;
+    const message = `Hello, I’m interested in getting my home appliances repair service.`;
     const url = `https://wa.me/${phoneNumber.replace(
       /\D/g,
       ""
@@ -28,11 +28,11 @@ export default function FloatingActionButtons() {
   };
 
   return (
-    <div className="fixed bottom-10 right-4 flex justify-end w-screen z-[101] py-2 pointer-events-none">
-      <div className="flex justify-end gap-2 flex-col max-w-7xl items-end">
+    <div className="fixed bottom-5 right-5 flex justify-end w-screen z-[101] py-2 pointer-events-none">
+      <div className="flex justify-end gap-3 flex-col max-w-7xl items-end">
         <button
           onClick={sendMessage}
-          className="rounded-md flex items-center justify-center h-14 w-14 bg-transparent pointer-events-auto"
+          className="flex items-center justify-center h-14 w-14 bg-green-400 rounded-full p-2.5 pointer-events-auto"
         >
           <Image
             quality={100}
@@ -44,7 +44,7 @@ export default function FloatingActionButtons() {
         </button>
         <button
           onClick={dialPhone}
-          className="flex items-center justify-center size-14 bg-gray-500 rounded-full pointer-events-auto"
+          className="flex items-center justify-center size-14 bg-gray-800 rounded-full pointer-events-auto"
         >
           <Image
             quality={100}
