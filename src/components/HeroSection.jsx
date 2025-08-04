@@ -8,18 +8,6 @@ import CTAButtons from "./CTAButtons";
 import ServicesBar from "./ServiceBar";
 
 export default function HeroSection() {
-  const sendMessage = () => {
-    const message = `Hello, I’m interested in getting my home appliance repaired by Bosch Repair Center.`;
-    const url = `https://wa.me/${phoneNumber.replace(
-      /\D/g,
-      ""
-    )}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-  };
-
-  const dialPhone = () => {
-    window.location.href = `tel:${phoneNumber.replace(/\s/g, "")}`;
-  };
   return (
     <section
       id="home"
@@ -31,7 +19,7 @@ export default function HeroSection() {
         </div>
         <ImageWithFallback
           src="/kitchen.jpg"
-          alt="Bosch appliance repair technician in UAE"
+          alt="Service Center UAE appliance repair technician in UAE"
           className="w-full h-auto"
           width={600}
           height={600}
@@ -42,9 +30,9 @@ export default function HeroSection() {
             <div className="space-y-4">
               <ServicesBar />
               <p className="text-xl text-gray-600 px-4 leading-relaxed">
-                Bosch Repair Center UAE offers expert repair services for all
-                Bosch home appliances. Our certified technicians provide
-                same-day service with genuine Bosch parts and comprehensive
+                Service Center UAE offers expert repair services for all
+                home appliances. Our certified technicians provide
+                same-day service with genuine parts and comprehensive
                 warranty.
               </p>
             </div>

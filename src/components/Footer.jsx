@@ -1,5 +1,4 @@
 import { phoneNumber } from "@/lib/company";
-import { Button } from "./ui/button";
 import {
   Phone,
   Mail,
@@ -10,7 +9,6 @@ import {
   Linkedin,
   Check,
 } from "lucide-react";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -20,32 +18,12 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
-              <Image
-                className="w-32"
-                src="/bosch.svg"
-                width={200}
-                height={100}
-                alt="Logo"
-              />
-              <span className=" text-sm">Repair Center</span>
-            </div>
+            <div className="text-xl mb-2 text-[#f80000] font-bold">Service Center UAE</div>
             <p className=" mb-6 leading-relaxed">
-              Leading Bosch appliance repair service in UAE. Certified
+              Leading Service Center UAE appliance repair service in UAE. Certified
               technicians, genuine parts, and comprehensive warranty coverage
-              for all Bosch home appliances.
+              for all home appliances.
             </p>
-            <div className="flex space-x-4">
-              <div className="p-2 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
-                <Facebook className="h-5 w-5" />
-              </div>
-              <div className="p-2 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
-                <Instagram className="h-5 w-5" />
-              </div>
-              <div className="p-2 rounded-lg hover:bg-primary/20 transition-colors cursor-pointer">
-                <Linkedin className="h-5 w-5" />
-              </div>
-            </div>
           </div>
 
           {/* Services */}
@@ -57,7 +35,7 @@ export default function Footer() {
                   href="#"
                   className="hover:text-primary flex items-center gap-2 transition-colors"
                 >
-                  <Check size={16} /> Bosch Refrigerator Repair
+                  <Check size={16} /> Refrigerator Repair
                 </a>
               </li>
               <li>
@@ -65,7 +43,7 @@ export default function Footer() {
                   href="#"
                   className="hover:text-primary flex items-center gap-2 transition-colors"
                 >
-                  <Check size={16} /> Bosch Dishwasher Repair
+                  <Check size={16} /> Dishwasher Repair
                 </a>
               </li>
               <li>
@@ -73,7 +51,7 @@ export default function Footer() {
                   href="#"
                   className="hover:text-primary flex items-center gap-2 transition-colors"
                 >
-                  <Check size={16} /> Bosch Oven Repair
+                  <Check size={16} /> Oven Repair
                 </a>
               </li>
               <li>
@@ -81,7 +59,7 @@ export default function Footer() {
                   href="#"
                   className="hover:text-primary flex items-center gap-2 transition-colors"
                 >
-                  <Check size={16} /> Bosch Washing Machine Repair
+                  <Check size={16} /> Washing Machine Repair
                 </a>
               </li>
               <li>
@@ -89,7 +67,7 @@ export default function Footer() {
                   href="#"
                   className="hover:text-primary flex items-center gap-2 transition-colors"
                 >
-                  <Check size={16} /> Bosch Dryer Repair
+                  <Check size={16} /> Dryer Repair
                 </a>
               </li>
               <li>
@@ -97,7 +75,7 @@ export default function Footer() {
                   href="#"
                   className="hover:text-primary flex items-center gap-2 transition-colors"
                 >
-                  <Check size={16} /> Bosch Cooktop Repair
+                  <Check size={16} /> Cooktop Repair
                 </a>
               </li>
             </ul>
@@ -112,14 +90,6 @@ export default function Footer() {
                 <div>
                   <div className="font-semibold">{phoneNumber}</div>
                   <div className=" text-sm">24/7 Emergency Line</div>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <div className="font-semibold">info@boschrepairabu.ae</div>
-                  <div className=" text-sm">Response within 2 hours</div>
                 </div>
               </div>
 
@@ -148,7 +118,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Bosch Repair Center UAE. All rights reserved.
+              © 2025 Service Center UAE. All rights reserved.
             </div>
             <div className="flex space-x-6 text-gray-400 text-sm">
               <a href="#" className="hover:text-primary transition-colors">

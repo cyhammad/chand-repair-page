@@ -8,13 +8,6 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { phoneNumber } from "@/lib/company";
 
-const companyColors = {
-  lg: "bg-[#a50034] hover:bg-red-700 text-white",
-  bosch: "bg-[#f80000] hover:bg-orange-700 text-white",
-  siemens: "bg-[#019997] hover:bg-[#006fa8] text-white",
-  samsung: "bg-[#020202] hover:bg-[#000000] text-white",
-};
-
 const CTAButtons = () => {
   const params = useParams();
   const company =
@@ -23,10 +16,9 @@ const CTAButtons = () => {
     ? `${company.charAt(0).toUpperCase()}${company.slice(1)}`
     : "Your";
 
-  const whatsappClass =
-    companyColors[company] || "bg-primary hover:bg-yellow-400 text-white";
+  const whatsappClass = "bg-[#f80000] hover:bg-orange-700 text-white";
 
-  const message = `Hello, I’m interested in getting my home appliance repaired by Bosch Repair Center.`;
+  const message = `Hello, I’m interested in getting my home appliances repair service.`;
   const whatsappUrl = `https://wa.me/${phoneNumber.replace(
     /\D/g,
     ""
@@ -34,7 +26,7 @@ const CTAButtons = () => {
   const callUrl = `tel:${phoneNumber.replace(/\s/g, "")}`;
 
   return (
-    <div className="grid grid-cols-2 max-w-screen overflow-hidden w-fit gap-3">
+    <div className="flex items-center max-w-screen overflow-hidden w-fit gap-3">
       <Link href={callUrl} passHref>
         <Button className="text-sm flex items-center gap-2" variant="secondary">
           <Phone strokeWidth={1} size={14} />
