@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Bosch Appliances Repairs",
-  description: "Official Bosch Repairing Center",
+  title: "Service Center UAE",
+  description: "Official UAE Repairing Center",
 };
 
 export default function RootLayout({ children }) {
