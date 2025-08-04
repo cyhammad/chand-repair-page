@@ -34,13 +34,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Image
-              className="w-32"
-              src="/bosch.svg"
-              width={200}
-              height={100}
-              alt="Logo"
-            />
+            <h1 className="text-2xl text-[#f80000] font-bold">Service Center UAE</h1>
 
             {/* Navigation */}
             <nav className="hidden md:flex items-center space-x-8">

@@ -1,11 +1,11 @@
 {
-  "name": "chand-bosch-page",
+  "name": "repair-site-chand",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev --turbopack",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "next lint"
   },
   "dependencies": {
